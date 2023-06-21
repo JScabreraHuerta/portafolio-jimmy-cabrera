@@ -42,6 +42,7 @@ body {
 a {
     color: var(--link-color);
     transition: all 0.5s ease-out;
+    text-decoration: none;
 }
 
 h1 {
@@ -97,10 +98,11 @@ p {
 }
 
 .carousel .slides{
-    width: 400%;
+    width: 280%;
     display: flex;
     list-style: none;
     transition: transform 0.5s ease-in-out;
+    
 }
     
 .carousel input{
@@ -116,18 +118,31 @@ p {
     cursor: pointer;
     margin: 0 0.25rem;
 }
-
+blockquote{
+    width: 600px;
+}
 #slide-1:checked ~ .slides{
-    transform: translateX(0%);
+    transform: translateX(1%);
 }
 #slide-2:checked ~ .slides{
-    transform: translateX(-25%);
+    transform: translateX(-35%);
 }
 #slide-3:checked ~ .slides{
-    transform: translateX(-50%);
+    transform: translateX(-71%);
 }
-#slide-4:checked ~ .slides{
-    transform: translateX(-75%);
+
+#slide-1:checked ~ .slides-nav label#dot-1,
+#slide-2:checked ~ .slides-nav label#dot-2,
+#slide-3:checked ~ .slides-nav label#dot-3{
+    background-color: var(--gray-dark-color);
+}
+
+.slide{
+    margin-right: 130px;
+}
+
+.slides  a{
+    color: var(--first-color);
 }
 /*Hero Image*/
 .hero-image {
@@ -388,6 +403,29 @@ progress::-moz-progress-bar {
     margin-bottom: 2rem;
 }
 
+.contact-me{
+    display: inline;
+    text-align: center;
+    
+}
+
+.contac div{
+    margin-bottom: 1.5rem ;
+    font-size: 17px;
+}
+
+.contact-conteiner{
+    margin-bottom: 5rem;
+}
+
+.footer{
+    background-color: var(--third-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom:var(--header-height);
+}
+
 .header {
     position: fixed;
     left: 0;
@@ -488,7 +526,8 @@ pointer-events: auto;
     fill: var(--first-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {   
+
     .portfolio > .container{
         display: grid;
         grid-template-columns: repeat(2,50%);
@@ -530,6 +569,10 @@ pointer-events: auto;
         grid-template-columns: repeat(3, 30%);
         justify-content: space-between;
         align-content: center;
+    }
+
+    .footer{
+        margin-bottom:0;
     }
 
     .header {
