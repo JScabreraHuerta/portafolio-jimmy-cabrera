@@ -108,7 +108,7 @@ p {
 }
 
 .slide{
-    margin-right:15vw;   
+    margin-right:17vw;   
 }    
 .carousel input{
  display:none;
@@ -141,11 +141,43 @@ blockquote{
 #slide-3:checked ~ .slides-nav label#dot-3{
     background-color: var(--gray-dark-color);
 }
-
-
-
 .slides  a{
     color: var(--first-color);
+}
+@media screen and (min-width: 768px) {  
+    .carousel{
+        margin: 2rem auto;
+        padding: 2rem 0;
+        max-width: 500px;        
+        text-align: center;
+        overflow-x: hidden;
+        background-color: var(--carousel-bg-color);
+    }
+    .slide{
+        margin-left: 5px;
+        margin-right: 9vw;   
+    }  
+    blockquote{
+        width: 50vw;
+    } 
+}
+
+@media screen and (min-width: 912px) {  
+    .carousel{
+        margin: 2rem auto;
+        padding: 2rem 0;
+        max-width: 500px;        
+        text-align: center;
+        overflow-x: hidden;
+        background-color: var(--carousel-bg-color);
+    }
+    .slide{
+        margin-left: 5px;
+        margin-right: 6vw;   
+    }  
+    blockquote{
+        width: 43vw;
+    } 
 }
 /*Hero Image*/
 .hero-image {
@@ -215,20 +247,7 @@ blockquote{
     fill: var(--first-color);
 }
 
-@media screen and (min-width: 768px) {  
-    .carousel{
-        margin: 2rem auto;
-        padding: 2rem 0;
-        max-width: 400px;        
-        text-align: center;
-        overflow-x: hidden;
-        background-color: var(--carousel-bg-color);
-    }
-    .slide{
-        margin-left: 5px;
-        margin-right: 15px;   
-    }   
-}
+
 @media screen and (min-width: 1024px) {
 
     .carousel{
