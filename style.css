@@ -100,7 +100,7 @@ p {
 }
 
 .carousel .slides{
-    width: 280%;
+    width: 300%;
     display: flex;
     list-style: none;
     transition: transform 0.5s ease-in-out;
@@ -108,7 +108,7 @@ p {
 }
 
 .slide{
-    margin-right: 15px;   
+    margin-right:15vw;   
 }    
 .carousel input{
  display:none;
@@ -124,7 +124,7 @@ p {
     margin: 0 0.25rem;
 }
 blockquote{
-    width: 300px;
+    width: 70vw;
 }
 #slide-1:checked ~ .slides{
     transform: translateX(1%);
